@@ -5,7 +5,7 @@ on:
 
 jobs:
   check:
-    if: ${{ github.repository }} == 'KIC/quantdb'
+    if: "${{ github.repository }}" == 'KIC/quantdb'
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -16,5 +16,5 @@ jobs:
           python-version: 3.8
       - name: echo
         run: |
-          echo "works"
+          echo ${{ github.repository }}
 
