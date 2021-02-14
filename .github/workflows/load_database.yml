@@ -12,6 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       #
+      #   only on concurrent run allowed!!!
+      #
+      - name: Turnstyle
+        uses: softprops/turnstyle@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #
       #   checkout
       #
       - name: chckout repository
