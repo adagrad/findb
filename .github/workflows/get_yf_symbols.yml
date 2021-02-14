@@ -1,0 +1,44 @@
+name: "Get YF Symbols"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # run every every day at 3 in the morning
+    - cron: "0 3 * * *"
+
+jobs:
+  symbols:
+    if: github.repository == 'adagrad/findb'
+    runs-on: ubuntu-latest
+    steps:
+      #
+      #   checkout
+      #
+      - name: chckout repository
+        uses: actions/checkout@v2
+      #
+      #   python
+      #
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools
+          python -m pip install -r requirements.txt
+      #
+      #   action
+      #
+      - name: get symbols
+        run: python findb/get_yf_symbols.py 180
+      #
+      #   commit changes
+      #
+      - uses: EndBug/add-and-commit@v7
+        name: commit changes
+        with:
+          add: findb/data/
+          author_name: action
+          author_email: action@github.com
+          # push: false
