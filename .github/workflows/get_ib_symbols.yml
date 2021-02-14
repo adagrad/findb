@@ -3,8 +3,8 @@ name: "Get IB Symbols"
 on:
   workflow_dispatch:
   schedule:
-    # run every sunda at 08:00
-    - cron: "0 8 * * 0"
+    # run once a month
+    - cron: "0 1 1 * *"
 
 jobs:
   symbols:
