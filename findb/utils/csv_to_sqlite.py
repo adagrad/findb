@@ -10,7 +10,7 @@ if __name__ == "__main__":
     table = sys.argv[3]
     skip_first_col = len(sys.argv) > 4
 
-    print(f"import into {db}")
+    print(f"import {file} into {db} . {table}")
     con = sqlite3.connect(db)
     cur = con.cursor()
 
