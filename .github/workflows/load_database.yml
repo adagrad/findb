@@ -37,6 +37,7 @@ jobs:
           pwd
           ls -lh
           tar -xzf fin.db.tgz
+          ls -lh
       #
       #   action, load csv files
       #
@@ -50,6 +51,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
-          files: quant.db
-          gzip: false
-          tag: database0
+          files: fin.db
+          gzip: true
+          tag: db
