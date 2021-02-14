@@ -62,3 +62,6 @@ Until dolt has not fixed its various performance and loading issues remember the
 * GitHub only supports a maximum of 100MB per file and a maximum of 1GB per repository. 
 * Eeach file under release assets can have a maximum of 2GB, where the number of files is unlimited. 
 
+## Credits
+Inspired by [JerBouma/FinanceDatabase](https://github.com/JerBouma/FinanceDatabase/) but using GitHub actions to keep
+data updated and use a SQL compliant database.
