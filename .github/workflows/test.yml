@@ -5,7 +5,7 @@ on:
 
 jobs:
   check:
-    if: github.repository == 'KIC/quantdb'
+    if: github.repository == 'adagrad/findb'
     runs-on: ubuntu-latest
     steps:
       - name: checkout
