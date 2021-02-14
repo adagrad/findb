@@ -8,13 +8,23 @@ jobs:
     if: github.repository == 'adagrad/findb'
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      #
+      #   checkout
+      #
+      - name: chckout repository
         uses: actions/checkout@v2
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v2
+      #
+      #   action
+      #
+      - name: test
+        run: echo "foo,bar" >> findb/data/.test.csv
+      #
+      #   commit changes
+      #
+      - uses: EndBug/add-and-commit@v7
+        name: commit changes
         with:
-          python-version: 3.8
-      - name: echo
-        run: |
-          echo ${{ github.repository }}
-
+          add: findb/data/
+          author_name: action
+          author_email: action@github.com
+          # push: false
