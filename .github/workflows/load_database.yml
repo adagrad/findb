@@ -54,6 +54,9 @@ jobs:
           python findb/utils/csv_to_sqlite.py findb/data/yahoo_symbols.csv fin.db yf_symbol True
           python findb/utils/csv_to_sqlite.py findb/data/yahoo_info.csv fin.db yf_info
           python findb/utils/csv_to_sqlite.py findb/data/ib_symbols.csv fin.db ib_symbol
+      #
+      #   update release asset
+      #
       - uses: meeDamian/github-release@2.0
         name: upload database
         with:
