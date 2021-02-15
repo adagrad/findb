@@ -88,6 +88,11 @@ if __name__ == '__main__':
         symbols = pd.read_csv(symbol_file)
 
         if delta and os.path.exists(out):
+            if os.path.getsize(out) / 1024 / 1024 >= 50:
+                # TODO if the file is bigger then 50MB
+                #  add a new csv file with a partition postfilx i.e. lala.csv.2
+                #  for determining the existend symbols we need to read both csv files and concat the symbols column list
+                pass
             info_symbols = set(pd.read_csv(out)["symbol"].to_list())
             symbols = symbols[~symbols['symbol'].isin(info_symbols)]
 

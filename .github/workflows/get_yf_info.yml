@@ -2,9 +2,9 @@ name: "Get YF Info"
 
 on:
   workflow_dispatch:
-  #schedule:
-  #  # run every every day at 4:10 in the morning (after get_yf_symbols.yml ran for 3 hours)
-  #  - cron: "10 4 * * *"
+  schedule:
+    # run every every day at 4:10 in the morning (after get_yf_symbols.yml ran for 3 hours)
+    - cron: "10 4 * * *"
 
 jobs:
   symbols:
