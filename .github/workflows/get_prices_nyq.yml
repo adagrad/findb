@@ -66,7 +66,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
-          files: $PRC_DB
+          files: ${{ env.PRC_DB }}
           gzip: true
           tag: db
 
@@ -128,6 +128,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
-          files: $PRC_DB
+          files: ${{ env.PRC_DB }}
           gzip: true
           tag: db

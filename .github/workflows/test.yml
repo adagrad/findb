@@ -7,6 +7,8 @@ jobs:
   check:
     if: github.repository == 'adagrad/findb'
     runs-on: ubuntu-latest
+    env:
+      FILE: findb/data/.test.csv
     steps:
       #
       #   checkout
@@ -17,7 +19,7 @@ jobs:
       #   action
       #
       - name: test
-        run: echo "foo,bar" >> findb/data/.test.csv
+        run: echo "foo,bar" >> $FILE
       #
       #   commit changes
       #
@@ -28,3 +30,11 @@ jobs:
           author_name: action
           author_email: action@github.com
           # push: false
+      - uses: meeDamian/github-release@2.0
+        name: upload file
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          allow_override: true
+          files: ${{ env.FILE }}
+          gzip: false
+          tag: db
