@@ -10,7 +10,7 @@ jobs:
     env:
       # Note we need to repeat this value in the upload step because of:
       #  https://github.com/meeDamian/github-release/issues/22
-      FILE: findb/data/.test.csv
+      FILE: test.csv
     steps:
       #
       #   checkout
@@ -21,7 +21,9 @@ jobs:
       #   action
       #
       - name: test
-        run: echo "foo,bar" >> $FILE
+        run: |
+          echo "foo,bar" >> $FILE
+          cp $FILE findb/data/
       #
       #   commit changes
       #
@@ -38,6 +40,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
           #files: ${{ env.FILE }}
-          files: findb/data/.test.csv
+          files: test.csv
+          draft: false
           gzip: true
+          name: db
           tag: db
