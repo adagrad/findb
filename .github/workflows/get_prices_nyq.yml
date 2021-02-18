@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FIN_DB: fin.db
+      # Note we need to repeat this value in the upload step because of:
+      #  https://github.com/meeDamian/github-release/issues/22
       PRC_DB: yfp_NYQ.db
       XE: NYQ
     steps:
@@ -66,7 +68,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
-          files: ${{ env.PRC_DB }}
+          # https://github.com/meeDamian/github-release/issues/22
+          # files: ${{ env.PRC_DB }}
+          files: yfp_NYQ.db
           gzip: true
           tag: db
 
@@ -128,6 +132,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
-          files: ${{ env.PRC_DB }}
-          gzip: true
+          # https://github.com/meeDamian/github-release/issues/22
+          # files: ${{ env.PRC_DB }}
+          files: yfp_NYQ.db
           tag: db
