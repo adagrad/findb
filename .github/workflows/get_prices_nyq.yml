@@ -59,7 +59,7 @@ jobs:
       - name: append sqlite database
         continue-on-error: true
         run: |
-          python findb/get_yf_prices.py -s $FIN_DB -d $PRC_DB -x $XE -b `dateutils.dadd today -2mo` -e `dateutils.dadd today +0d` -a
+          python findb/get_yf_prices.py -s $FIN_DB -d $PRC_DB -x $XE -b `dateutils.dadd today -2mo` -e `dateutils.dadd today +0d` -a -t 1
       #
       #   update release asset
       #

@@ -34,6 +34,7 @@ if __name__ == '__main__':
     parser.add_argument('-x', '--exchange', type=str, default='-1', help="only fetch prices for a single exchange")
     parser.add_argument('-u', '--update-missing', action='store_true', help="only fetch if no price exists for the given date range")
     parser.add_argument('-a', '--append', action='store_true', help="append new symbols and dates (target db need to exist)")
+    parser.add_argument('-t', '--max-time', type=int, help="maximum runtim time in minutes", default=60 * 5)
     args = parser.parse_args()
 
     db1 = os.path.abspath(args.source_db)
@@ -41,6 +42,7 @@ if __name__ == '__main__':
     exchange = args.exchange
     min_date = args.begin
     max_date = args.end
+    max_time = args.max_time
     period = "max" if min_date is None and max_date is None else None
     only_new_symbols = args.update_missing
     append_existing_data = args.append
@@ -115,7 +117,7 @@ if __name__ == '__main__':
                     traceback.print_exc()
                     sys.exit(os.EX_IOERR)
 
-            if (datetime.now() - start_time).seconds > 60 * 60 * 5:
+            if (datetime.now() - start_time).seconds / 60 > max_time:
                 print("maximum time reached!")
                 sys.exit(os.EX_OK)
 
