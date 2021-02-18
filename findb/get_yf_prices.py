@@ -56,15 +56,19 @@ if __name__ == '__main__':
 
     cur.execute("ATTACH DATABASE ? AS price", (db2,))
 
-    if append_existing_data:
+    if append_existing_data or only_new_symbols:
         sql = "select ys.symbol, ys.exchange, coalesce(max(yp.date), date('1950-01-01')) as maxdate \n" \
-              "from yf_symbol ys \n" \
-              "left outer join price.yf_price yp on yp.symbol = ys.symbol \n" \
-              "where 1 = 1 "
+              "from yf_symbol ys"
+
+        if only_new_symbols:
+            sql += "\njoin price.yf_price yp on yp.symbol = ys.symbol"
+        else:
+            sql += "\nleft outer join price.yf_price yp on yp.symbol = ys.symbol"
     else:
         sql = "select ys.symbol, ys.exchange, date('1950-01-01') as maxdate \n" \
-              "from yf_symbol ys \n" \
-              "where 1 = 1 "
+              "from yf_symbol ys" \
+
+    sql += "\nwhere 1 = 1 "
 
     if exchange is not None:
         sql += f"\n   and ys.exchange = '{exchange}'"
@@ -74,7 +78,7 @@ if __name__ == '__main__':
         if max_date is not None: subquery += f" and date <= '{max_date}'"
         sql += f"\n    and ys.symbol not in ({subquery})"
 
-    if append_existing_data:
+    if append_existing_data or only_new_symbols:
         sql += "\ngroup by ys.symbol, ys.exchange"
 
     print(f"import into {db2} from {min_date} to {max_date}")
@@ -94,7 +98,7 @@ if __name__ == '__main__':
     with engine.connect() as con:
         while len(symbols) > 0:
             symbol, exchange, last_available_date = symbols[0]
-            min_date = min(last_available_date, min_date)
+            min_date = min(str(last_available_date)[:10], min_date)
             print(symbol, exchange, min_date)
 
             try:

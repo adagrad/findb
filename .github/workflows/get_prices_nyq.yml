@@ -69,3 +69,65 @@ jobs:
           files: $PRC_DB
           gzip: true
           tag: db
+
+  continue-missing:
+    if: github.repository == 'adagrad/findb'
+    runs-on: ubuntu-latest
+    env:
+      FIN_DB: fin.db
+      PRC_DB: yfp_NYQ.db
+      XE: NYQ
+    steps:
+      #
+      #   only one concurrent run allowed!!!
+      #
+      - name: Turnstyle
+        uses: softprops/turnstyle@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #
+      #   checkout
+      #
+      - name: checkout repository
+        uses: actions/checkout@v2
+      #
+      #   python
+      #
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: install dependencies
+        run: |
+          sudo apt-get install dateutils sqlite3
+          python -m pip install --upgrade pip setuptools
+          python -m pip install -r requirements.txt
+      #
+      #   action, fetch database
+      #
+      - name: fetch and extract database
+        run: |
+          python findb/utils/fetch_github_asset.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} db "$FIN_DB.tgz" "$PRC_DB".tgz
+          pwd
+          ls -lh
+          tar -xzf fin.db.tgz
+          tar -xzf yfp_NYQ.db.tgz
+          ls -lh
+      #
+      #   action, load csv files
+      #
+      - name: append sqlite database
+        continue-on-error: true
+        run: |
+          python findb/get_yf_prices.py -s $FIN_DB -d $PRC_DB -x $XE -b `dateutils.dadd today -2mo` -e `dateutils.dadd today +0d` -u
+      #
+      #   update release asset
+      #
+      - uses: meeDamian/github-release@2.0
+        name: upload database
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          allow_override: true
+          files: $PRC_DB
+          gzip: true
+          tag: db
