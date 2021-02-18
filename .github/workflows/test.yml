@@ -39,8 +39,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
-          #files: ${{ env.FILE }}
-          files: test.csv
+          files: ${{ env.FILE }}
+          # files: test.csv
           draft: false
           gzip: true
           name: db
