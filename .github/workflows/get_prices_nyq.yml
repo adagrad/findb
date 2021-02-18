@@ -68,10 +68,10 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
-          # https://github.com/meeDamian/github-release/issues/22
-          # files: ${{ env.PRC_DB }}
-          files: yfp_NYQ.db
+          files: ${{ env.PRC_DB }}
+          draft: false
           gzip: true
+          name: db
           tag: db
 
   continue-missing:
@@ -132,7 +132,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
-          # https://github.com/meeDamian/github-release/issues/22
-          # files: ${{ env.PRC_DB }}
-          files: yfp_NYQ.db
+          files: ${{ env.PRC_DB }}
+          draft: false
+          gzip: true
+          name: db
           tag: db
+
