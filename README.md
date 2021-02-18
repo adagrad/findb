@@ -1,14 +1,14 @@
 # Financial Research Data Base
 
-The purpose of this database is to **enable research**. 
+The purpose of this database is to __enable research__. 
 
-There is not much free available financial data for a research only purpose. On the other hand a lot of APIs exist to
-obtain information on a dedicated asset. What is clearly missing is a broader access to the data in contrast to very
-specific API calls. 
+There is not much free available financial to support a research driven project. On the other hand a lot of APIs exist 
+to obtain information of any individual asset. What is clearly missing is a broader access to the data in contrast to 
+very specific API calls. To perform a research task the tool of choice is SQL. 
 
 FinDB should enable individuals todo research without having to build their own individual database. Because this is not 
-only tedious but also hits the same servers unnecessarily often for the same data. Save the planet! This is an attempt to 
-introduce an open and crowed maintained database which can be used to do research across different assets classes, 
+only tedious but also hits the same servers unnecessarily often for the same data. Save the planet! This is an attempt 
+to introduce an open and crowed maintained database which can be used to do research across different assets classes, 
 countries and sectors. In case you miss some specific data please consider contributing to this project. Make sure every
 contribution includes a GitHub action as well to keep the data updated (see *Data Lifecycle and Frequency*).
 
@@ -45,9 +45,25 @@ Dolthub has too many issues with performance, indices and data loading (can only
 
 
 ## Usage
-The sqlite can be downloaded from [here](https://github.com/adagrad/findb/releases/download/db/fin.db.tgz) and 
-used with basically any programing language. For those using MS Excel there are integrations for Excel as well, like 
+The [sqlite](https://www.sqlite.org/index.html) database can be downloaded from 
+[here](https://github.com/adagrad/findb/releases/download/db/fin.db.tgz) and used with basically any programing language. 
+
+On Linux just 
+```bash
+wget https://github.com/adagrad/findb/releases/download/db/fin.db.tgz
+```
+
+Then execute queries directly using SQL tools like 
+[DBeaver](https://github.com/dbeaver/dbeaver)
+[![DBeaer](https://dbeaver.io/product/dbeaver-ss-classic-new.png)](https://github.com/dbeaver/dbeaver)
+or [SQLiteStudio](https://sqlitestudio.pl)
+[![SQLiteStudio](https://sqlitestudio.pl/img/uploaded/full_48.png)](https://sqlitestudio.pl)
+
+For those using MS Excel there are integrations for Excel as well, like 
 [SQLiteForExcel](https://github.com/govert/SQLiteForExcel) for example.
+
+Or just use [ipython-sql](https://pypi.org/project/ipython-sql/)
+[![ipython-sql](.github/images/ipython-sql.png)](https://pypi.org/project/ipython-sql/)
 
 
 ## Contribution
@@ -68,4 +84,9 @@ different brokers or data sources.
 
 ## Credits
 Inspired by [JerBouma/FinanceDatabase](https://github.com/JerBouma/FinanceDatabase/) but using GitHub actions to keep
-data updated and use an SQL compliant database.
+data updated and use an SQL compliant database. No api client needed, just do SQL. 
+
+A customized version of [Benny-/Yahoo-ticker-symbol-downloader](https://github.com/Benny-/Yahoo-ticker-symbol-downloader) 
+is used to get the list of "all" symbols. [ranaroussi/yfinance](https://github.com/ranaroussi/yfinance) is used for the
+sector and industry information. And a lot of custom and direct _requests_ calls.
+
