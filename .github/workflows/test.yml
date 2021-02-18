@@ -39,5 +39,5 @@ jobs:
           allow_override: true
           #files: ${{ env.FILE }}
           files: findb/data/.test.csv
-          gzip: false
+          gzip: true
           tag: db
