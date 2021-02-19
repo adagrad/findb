@@ -65,6 +65,7 @@ class YfDetail(object):
 
                 # we eventually need to start a new partition file after we reached 50MB
                 self.datafile = get_next_partition_file(self.datafile, 50)
+                if not os.path.exists(self.datafile): self.csv_args = {}
                 df.set_index("symbol").to_csv(self.datafile, **self.csv_args)
 
                 # make sure we only append data from here on
@@ -94,21 +95,18 @@ if __name__ == '__main__':
     state = os.path.join(data_path, '.state', 'fetch_yahoo_info.pickle')
     out = os.path.join(data_path, 'yahoo_info.csv')
 
-    print(f"use {symbol_file} with delta: {delta}, runni maximum {max_minutes} minutes")
+    print(f"use {symbol_file} with delta: {delta}, running maximum {max_minutes} minutes")
+    dfs = pd.read_csv(symbol_file, index_col='symbol')
 
-    if state_exists(state):
-        yf_detail = load_state(state)
+    # make sure we have a unique set of symbols but as type list
+    if delta:
+        symbols = dfs.index.difference(load_csv(out, index_col='symbol').index)
     else:
-        dfs = pd.read_csv(symbol_file, index_col='symbol')
+        symbols = dfs.index
 
-        # make sure we have a unique set of symbols but as type list
-        if delta:
-            symbols = dfs.index.difference(load_csv(out, index_col='symbol').index)
-        else:
-            symbols = dfs.index
+    dfs = None
+    yf_detail = YfDetail(state, out, list(set(symbols.to_list())))
 
-        dfs = None
-        yf_detail = YfDetail(state, out, list(set(symbols.to_list())))
     try:
         yf_detail.fetch(max_minutes)
     except Exception as e:

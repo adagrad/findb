@@ -22,10 +22,13 @@ def load_csv(file, *args, **kwargs) -> pd.DataFrame:
 
 
 def get_next_partition_file(file, size_mb=None):
-    basefile = re.sub(r'\.\d+$', '', file)
+    basefile = re.sub(r'\d+$', '', file)
+
+    if not os.path.exists(basefile):
+        return basefile
 
     # check if we have a base file which still has some capacity
-    if size_mb is not None and os.path.exists(basefile) and os.path.getsize(basefile) / 1024 / 1024 < size_mb:
+    if size_mb is not None and os.path.getsize(basefile) / 1024 / 1024 < size_mb:
         return basefile
 
     # next check all extra partitions and return the nex possible file with capacity
