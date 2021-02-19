@@ -3,8 +3,8 @@ name: "Get YF Info"
 on:
   workflow_dispatch:
   schedule:
-    # run every every day at 4:10 in the morning (after get_yf_symbols.yml ran for 3 hours)
-    - cron: "10 4 * * *"
+    # run every every day at 4:30 in the morning (after get_yf_symbols.yml ran for 3 hours)
+    - cron: "30 4 * * *"
 
 jobs:
   symbols:
@@ -31,7 +31,7 @@ jobs:
       #   action
       #
       - name: get symbols info for new synbols
-        run: python findb/get_yf_info.py findb/data/yahoo_symbols.csv True 180
+        run: python findb/get_yf_info.py -s findb/data/yahoo_symbols.csv -d -t 180
       #
       #   commit changes
       #
