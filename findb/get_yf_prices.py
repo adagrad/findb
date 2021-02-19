@@ -93,14 +93,15 @@ if __name__ == '__main__':
     except Exception:
         pass
 
-    engine = create_engine(f'sqlite:///{db2}')
-    print(f"processing {len(symbols)} symbols")
+    never_seen_symbols = [s[0] for s in symbols if str(s[2]) == '1950-01-01']
+    print(f"processing {len(symbols)} symbols, {len(never_seen_symbols)} never seen before like {never_seen_symbols[:10]}")
 
     # start loading the quotes database
+    engine = create_engine(f'sqlite:///{db2}')
     with engine.connect() as con:
         while len(symbols) > 0:
             symbol, exchange, last_available_date = symbols[0]
-            if append_existing_data or only_new_symbols:
+            if append_existing_data or only_new_symbols and min_date is not None:
                 min_date = min(str(last_available_date)[:10], min_date)
 
             print(symbol, exchange, min_date)
