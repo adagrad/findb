@@ -10,7 +10,7 @@ from urllib.parse import quote
 import pandas as pd
 import requests
 
-from utils.state_utils import load_state, save_state
+from utils.state_utils import load_state, save_state, state_exists
 
 
 class TickerFinder(object):
@@ -92,6 +92,7 @@ class TickerFinder(object):
             count = len(df)
             if count > 0:
                 df = df[~df["symbol"].isin(self.existing_symbols)]
+                self.existing_symbols.update(df["symbol"].to_list())
 
             return df, count
 
@@ -138,8 +139,9 @@ if __name__ == '__main__':
     file = os.path.join(data_path, 'yahoo_symbols.csv')
 
     current_symbols = set(pd.read_csv(file)['symbol'].to_list()) if os.path.exists(file) else {}
+    resume = state_exists(state)
 
-    tf = load_state(state) if os.path.exists(state) else TickerFinder(current_symbols)
+    tf = load_state(state) if resume else TickerFinder(current_symbols)
     started = datetime.now()
     print(f"started at: {started}")
 
@@ -147,7 +149,7 @@ if __name__ == '__main__':
         for i, df in enumerate(tf.fetch()):
             if len(df) > 0:
                 df = df[['symbol', 'name', 'exch', 'exchDisp', 'type', 'typeDisp']]
-                df.to_csv(file, mode = 'a', header = False)
+                df.to_csv(file, index=False, **(dict(mode='a', header=False) if resume else {}))
 
                 if i % 10 == 0:
                     print(f"fetched {i} dataframes")

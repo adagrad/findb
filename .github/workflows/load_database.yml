@@ -21,7 +21,7 @@ jobs:
       #
       #   checkout
       #
-      - name: chckout repository
+      - name: checkout repository
         uses: actions/checkout@v2
       #
       #   python
@@ -51,9 +51,9 @@ jobs:
       - name: append sqlite database
         run: |
           sqlite3 fin.db < findb/data/.ddl/static.sql
-          python findb/utils/csv_to_sqlite.py findb/data/yahoo_symbols.csv fin.db yf_symbol True
-          python findb/utils/csv_to_sqlite.py findb/data/yahoo_info.csv fin.db yf_info
-          python findb/utils/csv_to_sqlite.py findb/data/ib_symbols.csv fin.db ib_symbol
+          python findb/utils/csv_to_sqlite.py -f findb/data/yahoo_symbols.csv -d fin.db -t yf_symbol
+          python findb/utils/csv_to_sqlite.py -f findb/data/yahoo_info.csv* -d fin.db -t yf_info
+          python findb/utils/csv_to_sqlite.py -f findb/data/ib_symbols.csv -d fin.db -t ib_symbol
       #
       #   update release asset
       #
@@ -63,5 +63,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           allow_override: true
           files: fin.db
+          draft: false
           gzip: true
+          name: db
           tag: db

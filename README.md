@@ -46,7 +46,7 @@ Dolthub has too many issues with performance, indices and data loading (can only
 
 ## Usage
 The [sqlite](https://www.sqlite.org/index.html) database can be downloaded from 
-[here](https://github.com/adagrad/findb/releases/download/db/fin.db.tgz) and used with basically any programing language. 
+[here](https://github.com/adagrad/findb/releases/tag/db) and used with basically any programing language. 
 
 On Linux just 
 ```bash
