@@ -14,7 +14,7 @@ jobs:
       FIN_DB: fin.db
       # Note we need to repeat this value in the upload step because of:
       #  https://github.com/meeDamian/github-release/issues/22
-      PRC_DB: yfp_NYQ.db
+      PRC_DB: yfp_NYQ-2021.db
       XE: NYQ
     steps:
       #
@@ -49,8 +49,8 @@ jobs:
           python findb/utils/fetch_github_asset.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} db "$FIN_DB.tgz" "$PRC_DB".tgz
           pwd
           ls -lh
-          tar -xzf fin.db.tgz
-          tar -xzf yfp_NYQ.db.tgz
+          tar -xzf "$FIN_DB.tgz"
+          tar -xzf "$PRC_DB".tgz
           ls -lh
       #
       #   action, load csv files
@@ -58,6 +58,7 @@ jobs:
       - name: append sqlite database
         continue-on-error: true
         run: |
+          sqlite3 $PRC_DB < findb/data/.ddl/yfp.sql
           python findb/get_yf_prices.py -s $FIN_DB -d $PRC_DB -x $XE -b `dateutils.dadd today -2mo` -e `dateutils.dadd today +0d` -a -t 300
       #
       #   update release asset

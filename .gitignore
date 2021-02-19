@@ -137,3 +137,4 @@ notebooks/
 *.bak
 *.bak.*
 .ToDo.md
+*.sqlite

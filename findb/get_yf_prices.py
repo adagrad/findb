@@ -100,7 +100,9 @@ if __name__ == '__main__':
     with engine.connect() as con:
         while len(symbols) > 0:
             symbol, exchange, last_available_date = symbols[0]
-            min_date = min(str(last_available_date)[:10], min_date)
+            if append_existing_data or only_new_symbols:
+                min_date = min(str(last_available_date)[:10], min_date)
+
             print(symbol, exchange, min_date)
 
             try:
