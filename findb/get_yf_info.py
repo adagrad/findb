@@ -1,14 +1,13 @@
-import json
+import argparse
 import os
-import re
 import sys
 import traceback
-from collections import defaultdict
 from datetime import datetime
-from string import Template
+
 import pandas as pd
 from yfinance.utils import get_json
 
+from utils.df_utils import load_csv, get_next_partition_file
 from utils.state_utils import save_state, load_state, state_exists, remove_state
 
 
@@ -29,6 +28,7 @@ class YfDetail(object):
         self.csv_args = {}
 
     def fetch(self, max_minutes=99999999):
+        print(f"start fetching info for {len(self.symbols)} symbols")
         start_time = datetime.now()
         info = YfDetail._new_dict()
         i = 0
@@ -62,7 +62,12 @@ class YfDetail(object):
             if i > 0 and i % 10 == 0:
                 print(url)
                 df = pd.DataFrame(info)
+
+                # we eventually need to start a new partition file after we reached 50MB
+                self.datafile = get_next_partition_file(self.datafile, 50)
                 df.set_index("symbol").to_csv(self.datafile, **self.csv_args)
+
+                # make sure we only append data from here on
                 self.csv_args = dict(mode='a', header=False)
                 save_state(self, self.statefile)
                 info = YfDetail._new_dict()
@@ -74,29 +79,36 @@ class YfDetail(object):
 
 
 if __name__ == '__main__':
-    symbol_file = sys.argv[1]
-    delta = sys.argv[2] == 'True' if len(sys.argv) > 2 else False
-    max_minutes = int(sys.argv[-1]) if len(sys.argv) > 1 and re.match(r"\d+", sys.argv[-1]) else 9999999
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-s', '--symbol-file', type=str)
+    parser.add_argument('-d', '--delta', action="store_true")
+    parser.add_argument('-t', '--max-time', type=int, default=9999999)
+
+    args = parser.parse_args()
+
+    symbol_file = args.symbol_file
+    delta = args.delta
+    max_minutes = args.max_time
 
     data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
     state = os.path.join(data_path, '.state', 'fetch_yahoo_info.pickle')
     out = os.path.join(data_path, 'yahoo_info.csv')
 
+    print(f"use {symbol_file} with delta: {delta}, runni maximum {max_minutes} minutes")
+
     if state_exists(state):
         yf_detail = load_state(state)
     else:
-        symbols = pd.read_csv(symbol_file)
+        dfs = pd.read_csv(symbol_file, index_col='symbol')
 
-        if delta and os.path.exists(out):
-            if os.path.getsize(out) / 1024 / 1024 >= 50:
-                # TODO if the file is bigger then 50MB
-                #  add a new csv file with a partition postfilx i.e. lala.csv.2
-                #  for determining the existend symbols we need to read both csv files and concat the symbols column list
-                pass
-            info_symbols = set(pd.read_csv(out)["symbol"].to_list())
-            symbols = symbols[~symbols['symbol'].isin(info_symbols)]
+        # make sure we have a unique set of symbols but as type list
+        if delta:
+            symbols = dfs.index.difference(load_csv(out, index_col='symbol').index)
+        else:
+            symbols = dfs.index
 
-        yf_detail = YfDetail(state, out, symbols['symbol'].to_list())
+        dfs = None
+        yf_detail = YfDetail(state, out, list(set(symbols.to_list())))
     try:
         yf_detail.fetch(max_minutes)
     except Exception as e:

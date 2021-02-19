@@ -5,14 +5,15 @@ from typing import Dict
 import pandas as pd
 
 
-def load_csv(file, *args, **kwargs):
+def load_csv(file, *args, **kwargs) -> pd.DataFrame:
     # first read the base file
     frames = [pd.read_csv(file, *args, **kwargs)]
 
     # then read all eventually existing extra partitions
-    for i in range(99):
-        if os.path.exists(f'{file}.{str(i).zfill(2)}'):
-            frames.append(pd.read_csv(file, *args, **kwargs))
+    for i in range(1, 99):
+        part_file = f'{file}{str(i).zfill(2)}'
+        if os.path.exists(part_file):
+            frames.append(pd.read_csv(part_file, *args, **kwargs))
         else:
             break
 
@@ -29,7 +30,7 @@ def get_next_partition_file(file, size_mb=None):
 
     # next check all extra partitions and return the nex possible file with capacity
     for i in range(1, 99):
-        pfile = f'{basefile}.{str(i).zfill(2)}'
+        pfile = f'{basefile}{str(i).zfill(2)}'
 
         if size_mb is not None and os.path.exists(pfile) and os.path.getsize(pfile) / 1024 / 1024 < size_mb:
             return pfile
