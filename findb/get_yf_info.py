@@ -59,7 +59,7 @@ class YfDetail(object):
                 print(f"Not able to find the data for {url}", e)
 
             i += 1
-            if i > 0 and i % 10 == 0:
+            if i > 0 and (i % 10 == 0 or len(self.symbols) <= 1):
                 print(url)
                 df = pd.DataFrame(info)
 
