@@ -1,4 +1,5 @@
 import argparse
+import glob
 import os
 import sys
 import traceback
@@ -8,7 +9,6 @@ import pandas as pd
 from yfinance.utils import get_json
 
 from utils.df_utils import load_csv, get_next_partition_file
-from utils.state_utils import save_state, load_state, state_exists, remove_state
 
 
 class YfDetail(object):
@@ -25,7 +25,6 @@ class YfDetail(object):
         self.symbols = symbols
         self.statefile = statefile
         self.datafile = datafile
-        self.csv_args = {}
 
     def fetch(self, max_minutes=99999999):
         print(f"start fetching info for {len(self.symbols)} symbols")
@@ -65,12 +64,11 @@ class YfDetail(object):
 
                 # we eventually need to start a new partition file after we reached 50MB
                 self.datafile = get_next_partition_file(self.datafile, 50)
-                if not os.path.exists(self.datafile): self.csv_args = {}
-                df.set_index("symbol").to_csv(self.datafile, **self.csv_args)
+                csv_kwargs = dict(mode='a', header=False) if os.path.exists(self.datafile) else {}
 
-                # make sure we only append data from here on
-                self.csv_args = dict(mode='a', header=False)
-                save_state(self, self.statefile)
+                print(f"saving new info to {self.datafile}")
+                df.set_index("symbol").to_csv(self.datafile, **csv_kwargs)
+
                 info = YfDetail._new_dict()
 
             if (datetime.now() - start_time).seconds / 60 > max_minutes:
@@ -84,12 +82,14 @@ if __name__ == '__main__':
     parser.add_argument('-s', '--symbol-file', type=str)
     parser.add_argument('-d', '--delta', action="store_true")
     parser.add_argument('-t', '--max-time', type=int, default=9999999)
+    parser.add_argument('--clear', action="store_true")
 
     args = parser.parse_args()
 
     symbol_file = args.symbol_file
     delta = args.delta
     max_minutes = args.max_time
+    clear_files = args.clear
 
     data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
     state = os.path.join(data_path, '.state', 'fetch_yahoo_info.pickle')
@@ -97,6 +97,14 @@ if __name__ == '__main__':
 
     print(f"use {symbol_file} with delta: {delta}, running maximum {max_minutes} minutes")
     dfs = pd.read_csv(symbol_file, index_col='symbol')
+
+    if clear_files:
+        all_partitions = glob.glob(out + "*", recursive=False)
+        for pfile in all_partitions:
+            try:
+                os.remove(pfile)
+            except OSError:
+                print(f"Error while deleting file: {pfile}")
 
     # make sure we have a unique set of symbols but as type list
     if delta:
@@ -113,5 +121,3 @@ if __name__ == '__main__':
         traceback.print_exc()
         sys.exit()
 
-    # we have got all information possible
-    remove_state(state)

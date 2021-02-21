@@ -7,7 +7,7 @@ def state_exists(state):
 
 
 def save_state(obj, file):
-    print("save state")
+    print(f"save state {file}")
     with open(file, 'wb') as fp:
         pickle.dump(obj, fp, protocol=pickle.HIGHEST_PROTOCOL)
 
