@@ -79,3 +79,13 @@ CREATE INDEX IF NOT EXISTS ib_symbol_s_idx ON ib_symbol(symbol);
 CREATE INDEX IF NOT EXISTS ib_symbol_ex_idx ON ib_symbol(exchange);
 CREATE INDEX IF NOT EXISTS ib_symbol_p_idx ON ib_symbol(product);
 
+CREATE TABLE IF NOT EXISTS ib_fractional
+(
+    symbol         varchar(255) not null,
+    main_exchange  varchar(255) not null,
+    description    IB_CONTRACT_ID varchar(1024),
+    ib_contract_id varchar(255),
+    last_update    timestamp,
+    primary key (symbol, main_exchange)
+);
+

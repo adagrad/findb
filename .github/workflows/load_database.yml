@@ -54,6 +54,7 @@ jobs:
           python findb/utils/csv_to_sqlite.py -f findb/data/yahoo_symbols.csv -d fin.db -t yf_symbol
           python findb/utils/csv_to_sqlite.py -f findb/data/yahoo_info.csv* -d fin.db -t yf_info
           python findb/utils/csv_to_sqlite.py -f findb/data/ib_symbols.csv -d fin.db -t ib_symbol
+          python findb/utils/csv_to_sqlite.py -f findb/data/ib_fractional.csv -d fin.db -t ib_fractional
       #
       #   update release asset
       #
