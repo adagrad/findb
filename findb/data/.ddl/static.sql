@@ -89,6 +89,7 @@ CREATE TABLE IF NOT EXISTS ib_fractional
     primary key (symbol, main_exchange)
 );
 
+DROP TABLE optionable;
 CREATE TABLE IF NOT EXISTS optionable
 (
     symbol         varchar(255) not null,
@@ -97,7 +98,8 @@ CREATE TABLE IF NOT EXISTS optionable
     quick_find     varchar(2048),
     option_chain   varchar(2048),
     asset_type     varchar(255),
-    last_update    timestamp
+    last_update    timestamp,
+    primary key (symbol)
 );
 
 CREATE INDEX IF NOT EXISTS optionable_symbol_is_idx ON optionable(symbol);
