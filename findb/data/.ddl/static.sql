@@ -89,3 +89,17 @@ CREATE TABLE IF NOT EXISTS ib_fractional
     primary key (symbol, main_exchange)
 );
 
+CREATE TABLE IF NOT EXISTS optionable
+(
+    symbol         varchar(255) not null,
+    company_name   varchar(1024),
+    details        varchar(2048),
+    quick_find     varchar(2048),
+    option_chain   varchar(2048),
+    asset_type     varchar(255),
+    last_update    timestamp
+);
+
+CREATE INDEX IF NOT EXISTS optionable_symbol_is_idx ON optionable(symbol);
+
+
