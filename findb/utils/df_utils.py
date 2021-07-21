@@ -1,8 +1,10 @@
 import os
 import re
-from typing import Dict
+import numpy as np
+from typing import Dict, List
 
 import pandas as pd
+from bs4 import PageElement, ResultSet
 
 
 def load_csv(file, *args, **kwargs) -> pd.DataFrame:
@@ -65,3 +67,35 @@ def get_new_indices(df: pd.DataFrame, filenames_index_col: Dict[str, str]) -> pd
             idx = idx.union(ne, sort=True)
 
         return idx
+
+
+def parse_table_with_links(table: List[PageElement], base_url: str = '') -> pd.DataFrame:
+    rows = table.find_all('tr')
+    nr_columns = max([sum([2 if col.find('a') else 1 for col in row.find_all('td')]) for row in rows])
+    nptable = np.empty((len(rows), nr_columns), dtype=object)
+    header = []
+
+    for h in table.find_all('th'):
+        for i in range(int(h["colspan"]) if h.has_attr("colspan") else 1):
+            header.append(''.join(h.stripped_strings))
+
+    for i, row in enumerate(rows):
+        columns = row.find_all('td')
+        for j, col in enumerate(columns):
+            rowspan = int(col["rowspan"]) if col.has_attr("rowspan") else 1
+            colspan = int(col["colspan"]) if col.has_attr("colspan") else 1
+
+            for i2 in range(i, i+rowspan):
+                for j2 in range(j, j+colspan):
+                    offset = 0
+                    while nptable[i2, j2 + offset] is not None:
+                        offset += 1
+
+                    if col.find('a'):
+                        nptable[i2, j2+offset] = ''.join(col.stripped_strings)
+                        nptable[i2, j2+offset+1] = base_url + '/' + col.a['href']
+                    else:
+                        nptable[i2, j2+offset] = ''.join(col.stripped_strings)
+
+    return pd.DataFrame(nptable) #, columns=header if len(header) > 0 else None)
+
