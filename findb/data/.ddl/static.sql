@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS ib_fractional
     primary key (symbol, main_exchange)
 );
 
-DROP TABLE optionable;
+-- DROP TABLE optionable;
 CREATE TABLE IF NOT EXISTS optionable
 (
     symbol         varchar(255) not null,
