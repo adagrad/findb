@@ -13,6 +13,16 @@ countries and sectors. In case you miss some specific data please consider contr
 contribution includes a GitHub action as well to keep the data updated (see *Data Lifecycle and Frequency*).
 
 
+## Release Files
+
+NOTE Even though the release date is old, the actual files are updated daily using github actions!
+ 
+* yfp_NAS.db.tgz - containes **y**ahoo **f**inance **p**rices for **NAS**DAQ assets
+* test.csv.tgz - files used for developing and testing githug actions, can be ignored
+* yfp_NYQ.db.tgz - containes **y**ahoo **f**inance **p**rices for **NY**SE assets
+* fin.db.tgz - contains all asset master data like symbols, industry sector, optionable, etc. 
+
+
 ## Project State
 At the moment the data is focussed around static data to answer questions like:
 * how are different asset classes distributed across different countries
