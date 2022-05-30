@@ -20,13 +20,16 @@ NOTE Even though the release date is old, the actual files are updated daily usi
 * yfp_NAS.db.tgz - containes **y**ahoo **f**inance **p**rices for **NAS**DAQ assets
 * test.csv.tgz - files used for developing and testing githug actions, can be ignored
 * yfp_NYQ.db.tgz - containes **y**ahoo **f**inance **p**rices for **NY**SE assets
-* fin.db.tgz - contains all asset master data like symbols, industry sector, optionable, etc. 
+* fin.db.tgz - contains all asset master data like symbols, industry sector, optionable, etc. and
+it should alwasy contain the most recent available trading symbols. However, the used method is 
+brute force and this can take several days for to discover the just IPOed company.  
 
 
 ## Project State
 At the moment the data is focussed around static data to answer questions like:
 * how are different asset classes distributed across different countries
 * which assets should be part of a model (and are supported by my broker)
+* only a subset of assets has price databases as well
 
 Later it may be useful to add price data as well such that questions like these can be answered:
 * how did certain asset classes or sectors behave in periods like crashes
@@ -40,7 +43,7 @@ The purpose of this database is explicitly not to provide most recent up-to-date
 GitHub actions the database will be growing on a regular basis with a rather low frequency like every month. This means
 only new data will be added. Events like a company changing its industry or website or whatever will not be tracked.
 Such events could be fixed with manual pull requests. Alternatively a full reset and start from scratch could be 
-initiated. However, such a process would take several days and can not be done with GitHub actions. 
+initiated. However, such a process would take several days and most likely can't be done via GitHub actions. 
 
 
 ## ETL
@@ -62,6 +65,8 @@ On Linux just
 ```bash
 wget https://github.com/adagrad/findb/releases/download/db/fin.db.tgz
 ```
+or wget any of the price databases.
+
 
 Then execute queries directly using SQL tools like 
 [DBeaver](https://github.com/dbeaver/dbeaver)
