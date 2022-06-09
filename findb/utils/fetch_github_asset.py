@@ -29,10 +29,13 @@ if __name__ == '__main__':
     print("found assets", ids)
 
     for file, id in ids.items():
-        url = f"https://api.github.com/repos/{repo}/releases/assets/{id}"
-        print("asset url", url)
-        with requests.get(url, stream=True, headers={"authorization": f"Bearer {token}", 'Accept': 'application/octet-stream'}) as r:
-            r.raise_for_status()
-            r.raw.decode_content = True
-            with open(file, 'wb') as f:
-                shutil.copyfileobj(r.raw, f)
+        try:
+            url = f"https://api.github.com/repos/{repo}/releases/assets/{id}"
+            print("asset url", url)
+            with requests.get(url, stream=True, headers={"authorization": f"Bearer {token}", 'Accept': 'application/octet-stream'}) as r:
+                r.raise_for_status()
+                r.raw.decode_content = True
+                with open(file, 'wb') as f:
+                    shutil.copyfileobj(r.raw, f)
+        except Exception as e:
+            print(e)
