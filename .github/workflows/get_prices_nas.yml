@@ -19,7 +19,7 @@ jobs:
     steps:
 
       - name: Set current year as env
-        run: echo "$(date +'%Y')" >> $YEAR
+        run: echo "::set-output name=year::$(date +'%Y')"
       #
       #   only one concurrent run allowed!!!
       #
