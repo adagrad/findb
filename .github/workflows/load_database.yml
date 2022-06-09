@@ -42,7 +42,7 @@ jobs:
       #
       - name: fetch and extract database
         run: |
-          python findb/utils/fetch_github_asset.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} "$RELEASE" fin.db.tgz
+          python findb/utils/github_asset.py GET ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} "$RELEASE" fin.db.tgz
           pwd
           ls -lh
           tar -xzf fin.db.tgz || true
@@ -61,13 +61,8 @@ jobs:
       #
       #   update release asset
       #
-      - uses: meeDamian/github-release@2.0
-        name: upload database
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          allow_override: true
-          files: fin.db
-          draft: false
-          gzip: true
-          name: db
-          tag: db
+      - name: compress and push database
+        run: |
+          pwd
+          tar -czf fin.db.tgz fin.db
+          python findb/utils/github_asset.py PUT ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} "$RELEASE" fin.db.tgz
