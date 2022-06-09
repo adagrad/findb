@@ -17,6 +17,9 @@ jobs:
       PRC_DB: yfp_NAS.db
       XE: NAS
     steps:
+
+      - name: Set current year as env
+        run: echo "$(date +'%Y')" >> $YEAR
       #
       #   only one concurrent run allowed!!!
       #
@@ -46,6 +49,7 @@ jobs:
       #
       - name: fetch and extract database
         run: |
+          echo "current year: $YEAR"
           python findb/utils/fetch_github_asset.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} db "$FIN_DB.tgz" "$PRC_DB".tgz
           pwd
           ls -lh
