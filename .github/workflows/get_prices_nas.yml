@@ -14,7 +14,7 @@ jobs:
       FIN_DB: fin.db
       # Note we need to repeat this value in the upload step because of:
       #  https://github.com/meeDamian/github-release/issues/22
-      PRC_DB: yfp_NAS-2021.db
+      PRC_DB: yfp_NAS.db
       XE: NAS
     steps:
       #
