@@ -4,12 +4,7 @@ import shutil
 import requests
 
 
-if __name__ == '__main__':
-    token = sys.argv[1]
-    repo = sys.argv[2]
-    tag = sys.argv[3]
-    files = sys.argv[4:]
-
+def list_release_files(repo, tag, token):
     resp = requests.get(
         f"https://api.github.com/repos/{repo}/releases/tags/{tag}",
         headers = {
@@ -20,6 +15,16 @@ if __name__ == '__main__':
     print(resp)
     print("asstes", [a['name'] for a in resp["assets"]])
 
+    return resp
+
+
+if __name__ == '__main__':
+    token = sys.argv[1]
+    repo = sys.argv[2]
+    tag = sys.argv[3]
+    files = sys.argv[4:]
+
+    resp = list_release_files(repo, tag, token)
     ids = {}
     for file in files:
         match = [a['id'] for a in resp["assets"] if a["name"] == file]
@@ -39,3 +44,7 @@ if __name__ == '__main__':
                     shutil.copyfileobj(r.raw, f)
         except Exception as e:
             print(e)
+
+
+def test_list_files():
+    list_release_files('adagrad/findb', '2021', open("../../.token").read())

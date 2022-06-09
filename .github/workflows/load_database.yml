@@ -10,6 +10,8 @@ jobs:
   load:
     if: github.repository == 'adagrad/findb'
     runs-on: ubuntu-latest
+    env:
+      RELEASE: 2021
     steps:
       #
       #   only one concurrent run allowed!!!
@@ -18,7 +20,6 @@ jobs:
         uses: softprops/turnstyle@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE: 2021
       #
       #   checkout
       #
@@ -41,10 +42,10 @@ jobs:
       #
       - name: fetch and extract database
         run: |
-          python findb/utils/fetch_github_asset.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} $RELEASE fin.db.tgz
+          python findb/utils/fetch_github_asset.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} "$RELEASE" fin.db.tgz
           pwd
           ls -lh
-          tar -xzf fin.db.tgz
+          tar -xzf fin.db.tgz || true
           ls -lh
       #
       #   action, load csv files
