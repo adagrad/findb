@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - master
+  workflow_run:
+    workflows: ["Get YF Info", "Get YF Symbols"]
+    types:
+      - completed
 
 jobs:
   load:

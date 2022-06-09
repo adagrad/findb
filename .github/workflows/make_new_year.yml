@@ -1,0 +1,48 @@
+name: "Load Prices NAS into DB"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # run on last day of year
+    - cron: "0 0 31 12 *"
+
+jobs:
+  load:
+    if: github.repository == 'adagrad/findb'
+    runs-on: ubuntu-latest
+    env:
+      RELEASE: 2021
+      DB1: "yfp_NAS.db.tgz"
+      DB2: "yfp_NYQ.db.tgz"
+    steps:
+      #
+      #   only one concurrent run allowed!!!
+      #
+      - name: Turnstyle
+        uses: softprops/turnstyle@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #
+      #   checkout
+      #
+      - name: checkout repository
+        uses: actions/checkout@v2
+      #
+      #   python
+      #
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: install dependencies
+        run: |
+          sudo apt-get install dateutils sqlite3
+          python -m pip install --upgrade pip setuptools
+          python -m pip install -r requirements.txt
+      #
+      #   action, fetch database and update year postfix
+      #
+      - name: fetch and extract database
+        run: |
+          echo "current year: $YEAR"
+          python findb/utils/github_asset.py BUMP_YEAR ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} "$RELEASE" "$DB1" "$DB2"
