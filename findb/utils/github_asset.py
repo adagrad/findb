@@ -4,6 +4,7 @@ import subprocess
 import sys
 import shutil
 from datetime import datetime
+from time import sleep
 
 import requests
 
@@ -82,14 +83,21 @@ def upload_file(repo, tag, token, asset_file):
         )
 
     url = release['upload_url'].replace("{?name,label}", f"?name={asset_name}")
-    resp = requests.patch(
-        url,
-        headers={
-            "authorization": f"Bearer {token}",
-            'content-type': 'application/octet-stream'
-        },
-        data=open(asset_file, 'rb').read()
-    )
+    for i in range(5):
+        resp = requests.patch(
+            url,
+            headers={
+                "authorization": f"Bearer {token}",
+                'content-type': 'application/octet-stream'
+            },
+            data=open(asset_file, 'rb').read()
+        )
+
+        if resp.status_code // 100 == 2:
+            break
+
+        print("retry upload after exception", resp.text)
+        sleep(i * 10)
 
     print(url, resp.text)
     assert resp.status_code // 100 == 2, f"post failed {resp}, release needs to be a draft release!"

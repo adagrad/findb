@@ -11,14 +11,15 @@ jobs:
     if: github.repository == 'adagrad/findb'
     runs-on: ubuntu-latest
     env:
+      RELEASE: 2021
       FIN_DB: fin.db
       # Note we need to repeat this value in the upload step because of:
       #  https://github.com/meeDamian/github-release/issues/22
       PRC_DB: yfp_NAS.db
       XE: NAS
     steps:
-
       - name: Set current year as env
+        id: year
         run: echo "::set-output name=year::$(date +'%Y')"
       #
       #   only one concurrent run allowed!!!
@@ -50,7 +51,7 @@ jobs:
       - name: fetch and extract database
         run: |
           echo "current year: $YEAR"
-          python findb/utils/fetch_github_asset.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} db "$FIN_DB.tgz" "$PRC_DB".tgz
+          python findb/utils/github_asset.py GET ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} "$RELEASE" "$FIN_DB.tgz" "$PRC_DB.tgz"
           pwd
           ls -lh
           tar -xzf "$FIN_DB.tgz"
@@ -63,17 +64,7 @@ jobs:
         continue-on-error: true
         run: |
           sqlite3 $PRC_DB < findb/data/.ddl/yfp.sql
-          python findb/get_yf_prices.py -s $FIN_DB -d $PRC_DB -x $XE -b `dateutils.dadd today -2mo` -e `dateutils.dadd today +0d` -a -t 300
-      #
-      #   update release asset
-      #
-      - uses: meeDamian/github-release@2.0
-        name: upload database
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          allow_override: true
-          files: ${{ env.PRC_DB }}
-          draft: false
-          gzip: true
-          name: db
-          tag: db
+          python findb/get_yf_prices.py -s "$FIN_DB" -d "$PRC_DB" -x $XE -b `dateutils.dadd today -2mo` -e `dateutils.dadd today +0d` -a -t 300
+          ls -l
+          tar -czf "$PRC_DB.tgz" "$PRC_DB"
+          python findb/utils/github_asset.py PUT ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} "$RELEASE" "$PRC_DB.tgz"
