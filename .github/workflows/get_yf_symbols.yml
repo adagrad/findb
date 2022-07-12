@@ -2,9 +2,9 @@ name: "Get YF Symbols"
 
 on:
   workflow_dispatch:
-  schedule:
+  #schedule:
     # run every every day at 1 in the morning
-    - cron: "0 1 * * *"
+    #- cron: "0 1 * * *"
 
 jobs:
   symbols:
