@@ -1,5 +1,10 @@
 # Financial Research Data Base
 
+**DISCONTINUED, please use https://github.com/adagrad/findb_dolthub instead. **
+
+
+
+
 The purpose of this database is to __enable research__. 
 
 There is not much free available financial to support a research driven project. On the other hand a lot of APIs exist 
