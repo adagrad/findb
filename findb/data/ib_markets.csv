@@ -87,7 +87,7 @@
 4,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cboe&showcategories=OPTGRP,Options,Monday - Friday: 8:30-15:15
 5,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=gemini&showcategories=OPTGRP,Options,9:30 - 16:00 ET
 6,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=mercury&showcategories=OPTGRP,Options,9:30 - 16:00 ET
-7,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iseopt&showcategories=OPTGRP,"Options (Currency, Equity, Equity Index)",9:30 - 16:00 ET
+7,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iseopt&showcategories=OPTGRP,"Options (Equity Index, Currency, Equity)",9:30 - 16:00 ET
 8,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=emerald&showcategories=OPTGRP,Options,9:30 - 16:00 ET
 9,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=miax&showcategories=OPTGRP,Options,Monday - Friday: 9:30-16:00
 10,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=pearl&showcategories=OPTGRP,Options,9:30 - 16:00 ET
@@ -95,19 +95,19 @@
 12,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nasdaqbx&showcategories=OPTGRP,Options,9:30 - 16:00 ET
 13,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=amex&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 7:00-20:00
 14,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=pse&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 6:30-13:00
-15,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=phlx&showcategories=OPTGRP,"Options (Equity Index, Equity)",Monday - Friday: 9:30-16:00
-16,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cde&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 9:30-16:30
+15,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=phlx&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 9:30-16:00
+16,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cde&showcategories=OPTGRP,"Options (Equity Index, Equity)",Monday - Friday: 9:30-16:30
 17,Mexico,https://www.interactivebrokers.com/en/index.php?f=2222&exch=mexder&showcategories=OPTGRP,Options (Equity),Monday - Friday: 7:30-14:00
 0,Belgium,https://www.interactivebrokers.com/en/index.php?f=2222&exch=belfox&showcategories=OPTGRP,Options (Equity Index),Monday - Friday: 9:00-17:35
-1,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=monep&showcategories=OPTGRP,"Options (Equity, Equity Index)",Options: 9:00 - 17:30 CETFutures: 8:00 - 22:00 CET
+1,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=monep&showcategories=OPTGRP,"Options (Equity Index, Equity)",Options: 9:00 - 17:30 CETFutures: 8:00 - 22:00 CET
 2,Germany,https://www.interactivebrokers.com/en/index.php?f=2222&exch=eurex&showcategories=OPTGRP,Options,8:00 - 19:00 CET
 3,Italy,https://www.interactivebrokers.com/en/index.php?f=2222&exch=idem&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 9:00-17:50
 4,Netherlands,https://www.interactivebrokers.com/en/index.php?f=2222&exch=fta&showcategories=OPTGRP,"Options (Currency, Equity, Equity Index)",Monday - Friday: 9:00-22:00
 5,Spain,https://www.interactivebrokers.com/en/index.php?f=2222&exch=meffrv&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 8:00-17:35
 6,Sweden,https://www.interactivebrokers.com/en/index.php?f=2222&exch=oms&showcategories=OPTGRP,Options (Equity),Monday - Friday: 9:00-17:25
 7,Switzerland,https://www.interactivebrokers.com/en/index.php?f=2222&exch=soffex&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 8:30-17:20
-8,United Kingdom,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iceeu&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 8:00-18:00
-0,Australia,https://www.interactivebrokers.com/en/index.php?f=2222&exch=asx&showcategories=OPTGRP,"Options (Equity Index, Equity)",10:00 - 16:00 Sydney Time
+8,United Kingdom,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iceeu&showcategories=OPTGRP,"Options (Equity Index, Equity)",Monday - Friday: 8:00-18:00
+0,Australia,https://www.interactivebrokers.com/en/index.php?f=2222&exch=asx&showcategories=OPTGRP,"Options (Equity, Equity Index)",10:00 - 16:00 Sydney Time
 1,Hong Kong,https://www.interactivebrokers.com/en/index.php?f=2222&exch=hkfe&showcategories=OPTGRP,Options (Equity Index),09:00- 16:00 HKT. Derivatives trading hours vary.
 2,Hong Kong,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sehk&showcategories=OPTGRP,Options (Stock Options),9:30 - 12:00 HKT13:00 - 16:00 HKT
 3,India,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nse&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 9:15-15:30
@@ -125,7 +125,7 @@
 8,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nyseliffe&showcategories=FUTGRP,"Futures (Metals, Equity Index)",19:16-17:00 Sunday-Friday ET19:18-17 Sunday-Friday ET - Gold and Silver options only
 9,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=smfe&showcategories=FUTGRP,Futures,Monday - Friday: 7:00-16:00
 10,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cde&showcategories=FUTGRP,"Futures (Equity Index, Fixed Income)",Monday - Friday: 9:30-16:30
-11,Mexico,https://www.interactivebrokers.com/en/index.php?f=2222&exch=mexder&showcategories=FUTGRP,"Futures (Single Stock, Currency, Equity Index, Interest Rate)",Monday - Friday: 7:30-14:00
+11,Mexico,https://www.interactivebrokers.com/en/index.php?f=2222&exch=mexder&showcategories=FUTGRP,"Futures (Currency, Equity Index, Interest Rate, Single Stock)",Monday - Friday: 7:30-14:00
 0,Belgium,https://www.interactivebrokers.com/en/index.php?f=2222&exch=belfox&showcategories=FUTGRP,Futures (Equity Index),Monday - Friday: 9:00-17:35
 1,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=matif&showcategories=FUTGRP,Futures (Agriculture),Monday - Friday: 10:45-18:30
 2,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=monep&showcategories=FUTGRP,Futures (Equity Index),Options: 9:00 - 17:30 CETFutures: 8:00 - 22:00 CET
@@ -137,18 +137,18 @@
 8,Sweden,https://www.interactivebrokers.com/en/index.php?f=2222&exch=oms&showcategories=FUTGRP,Futures (Equity Index),Monday - Friday: 9:00-17:25
 9,Switzerland,https://www.interactivebrokers.com/en/index.php?f=2222&exch=soffex&showcategories=FUTGRP,"Futures (Equity Index, Single Stock)",Monday - Friday: 8:30-17:20
 10,United Kingdom,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ipe&showcategories=FUTGRP,Futures (Energy),Monday - Sunday: 1:00-23:00
-11,United Kingdom,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iceeu&showcategories=FUTGRP,"Futures (Equity Index, Fixed Income, Single Stock)",Monday - Friday: 8:00-18:00
+11,United Kingdom,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iceeu&showcategories=FUTGRP,"Futures (Single Stock, Equity Index, Fixed Income)",Monday - Friday: 8:00-18:00
 12,United Kingdom,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iceeusoft&showcategories=FUTGRP,Futures (Commodities),Monday - Friday: 8:45-18:00
 13,United Kingdom,https://www.interactivebrokers.com/en/index.php?f=2222&exch=lmeotc&showcategories=FUTGRP,Futures,Monday - Friday: 1:00-19:00
 0,Australia,https://www.interactivebrokers.com/en/index.php?f=2222&exch=snfe&showcategories=FUTGRP,"Futures (Equity Index, Interest Rate)","Day and night trading sessions for access almost 24 hours a day:5.10pm to 7.00am and 9.50am to 4.30pm  (Sydney time, when US daylight saving time)5.10pm to 8.00am and 9.50am to 4.30pm (Sydney time, when US non-daylight saving time)"
 1,Hong Kong,https://www.interactivebrokers.com/en/index.php?f=2222&exch=hkfe&showcategories=FUTGRP,"Futures (Equity Index, Single Stock)",09:00- 16:00 HKT. Derivatives trading hours vary.
 2,India,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nse&showcategories=FUTGRP,"Futures (Currency, Equity Index, Single Stock)",Monday - Friday: 9:15-15:30
 3,Japan,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ose.jpn&showcategories=FUTGRP,"Futures (Equity Index, Fixed Income)",Index FUT: 08:45-15:10 JSTNikkei VI FUT: 09:00-15:10 JSTIndex OPT: 09:00-15:10/16:30-5:30 JSTEquity OPT: 09:00-11:30/12:30-15:10 JSTSTK: 09:00-11:30/12:30-15:00 JST
-4,Singapore,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sgx&showcategories=FUTGRP,"Futures (Bond, Currency, Equity Index, Metals, Rubber, Single Stock)",Securities 9:00 - 17:00 SGT
+4,Singapore,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sgx&showcategories=FUTGRP,"Futures (Equity Index, Metals, Rubber, Single Stock, Bond, Currency)",Securities 9:00 - 17:00 SGT
 5,South Korea,https://www.interactivebrokers.com/en/index.php?f=2222&exch=kse&showcategories=FUTGRP,"Futures (Equity Index, Single Stock)",Monday - Friday: 9:00-15:45
 0,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ecbot&showcategories=OPTGRP,"Futures Options (Agriculture, Equity Index, Fixed Income)",Monday - Sunday: 19:00-23:59
-1,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=globex&showcategories=OPTGRP,"Futures Options (Equity Index, Currency)",Sunday - Friday: 1700 - 1600
-2,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nymex&showcategories=OPTGRP,"Futures Options (Metals, Energy)",Sunday 18:00 - Friday 17:15 ET
+1,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=globex&showcategories=OPTGRP,"Futures Options (Currency, Equity Index)",Sunday - Friday: 1700 - 1600
+2,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nymex&showcategories=OPTGRP,"Futures Options (Energy, Metals)",Sunday 18:00 - Friday 17:15 ET
 3,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cmecrypto&showcategories=OPTGRP,Futures Options,Sunday - Thursday: 17:00-23:59
 4,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nybot&showcategories=OPTGRP,"Futures Options (Agriculture, Equity Index)",1:30 - 15:15 - Via ICE
 5,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nyseliffe&showcategories=OPTGRP,Futures Options (Metals),19:16-17:00 Sunday-Friday ET19:18-17 Sunday-Friday ET - Gold and Silver options only
@@ -202,7 +202,7 @@
 15,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nysenat&showcategories=WAR,Warrants,Monday - Friday: 9:30-16:00 EST
 16,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=pink&showcategories=WAR,Warrants,Monday - Friday: 9:30-16:00
 17,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=venture&showcategories=WAR,Warrants,Monday - Friday: 16:15-17:00
-0,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sbf&showcategories=WAR,"Warrants (Index, Stock)",Monday - Friday: 9:00-17:40
+0,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sbf&showcategories=WAR,"Warrants (Stock, Index)",Monday - Friday: 9:00-17:40
 1,Germany,https://www.interactivebrokers.com/en/index.php?f=2222&exch=fwb&showcategories=WAR,"Warrants (Index, Stock)",Monday - Friday: 8:00-20:00
 2,Germany,https://www.interactivebrokers.com/en/index.php?f=2222&exch=gettex&showcategories=WAR,Warrants,Monday - Friday: 9:00-20:00
 3,Germany,https://www.interactivebrokers.com/en/index.php?f=2222&exch=swb&showcategories=WAR,"Warrants (Index, Stock)",Monday - Friday: 8:00-22:00
