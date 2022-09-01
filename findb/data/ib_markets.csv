@@ -87,45 +87,45 @@
 4,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cboe&showcategories=OPTGRP,Options,Monday - Friday: 8:30-15:15
 5,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=gemini&showcategories=OPTGRP,Options,9:30 - 16:00 ET
 6,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=mercury&showcategories=OPTGRP,Options,9:30 - 16:00 ET
-7,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iseopt&showcategories=OPTGRP,"Options (Equity Index, Currency, Equity)",9:30 - 16:00 ET
+7,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iseopt&showcategories=OPTGRP,"Options (Equity, Equity Index, Currency)",9:30 - 16:00 ET
 8,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=emerald&showcategories=OPTGRP,Options,9:30 - 16:00 ET
 9,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=miax&showcategories=OPTGRP,Options,Monday - Friday: 9:30-16:00
 10,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=pearl&showcategories=OPTGRP,Options,9:30 - 16:00 ET
 11,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nasdaqom&showcategories=OPTGRP,Options (Equity),9:30 - 16:00 ET
 12,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nasdaqbx&showcategories=OPTGRP,Options,9:30 - 16:00 ET
 13,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=amex&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 7:00-20:00
-14,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=pse&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 6:30-13:00
+14,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=pse&showcategories=OPTGRP,"Options (Equity Index, Equity)",Monday - Friday: 6:30-13:00
 15,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=phlx&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 9:30-16:00
-16,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cde&showcategories=OPTGRP,"Options (Equity Index, Equity)",Monday - Friday: 9:30-16:30
+16,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cde&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 20:00 ET (t-1) to 16:30 ET
 17,Mexico,https://www.interactivebrokers.com/en/index.php?f=2222&exch=mexder&showcategories=OPTGRP,Options (Equity),Monday - Friday: 7:30-14:00
 0,Belgium,https://www.interactivebrokers.com/en/index.php?f=2222&exch=belfox&showcategories=OPTGRP,Options (Equity Index),Monday - Friday: 9:00-17:35
-1,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=monep&showcategories=OPTGRP,"Options (Equity Index, Equity)",Options: 9:00 - 17:30 CETFutures: 8:00 - 22:00 CET
+1,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=monep&showcategories=OPTGRP,"Options (Equity, Equity Index)",Options: 9:00 - 17:30 CETFutures: 8:00 - 22:00 CET
 2,Germany,https://www.interactivebrokers.com/en/index.php?f=2222&exch=eurex&showcategories=OPTGRP,Options,8:00 - 19:00 CET
 3,Italy,https://www.interactivebrokers.com/en/index.php?f=2222&exch=idem&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 9:00-17:50
 4,Netherlands,https://www.interactivebrokers.com/en/index.php?f=2222&exch=fta&showcategories=OPTGRP,"Options (Currency, Equity, Equity Index)",Monday - Friday: 9:00-22:00
 5,Spain,https://www.interactivebrokers.com/en/index.php?f=2222&exch=meffrv&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 8:00-17:35
 6,Sweden,https://www.interactivebrokers.com/en/index.php?f=2222&exch=oms&showcategories=OPTGRP,Options (Equity),Monday - Friday: 9:00-17:25
-7,Switzerland,https://www.interactivebrokers.com/en/index.php?f=2222&exch=soffex&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 8:30-17:20
-8,United Kingdom,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iceeu&showcategories=OPTGRP,"Options (Equity Index, Equity)",Monday - Friday: 8:00-18:00
+7,Switzerland,https://www.interactivebrokers.com/en/index.php?f=2222&exch=soffex&showcategories=OPTGRP,"Options (Equity Index, Equity)",Monday - Friday: 8:30-17:20
+8,United Kingdom,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iceeu&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 8:00-18:00
 0,Australia,https://www.interactivebrokers.com/en/index.php?f=2222&exch=asx&showcategories=OPTGRP,"Options (Equity, Equity Index)",10:00 - 16:00 Sydney Time
 1,Hong Kong,https://www.interactivebrokers.com/en/index.php?f=2222&exch=hkfe&showcategories=OPTGRP,Options (Equity Index),09:00- 16:00 HKT. Derivatives trading hours vary.
 2,Hong Kong,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sehk&showcategories=OPTGRP,Options (Stock Options),9:30 - 12:00 HKT13:00 - 16:00 HKT
-3,India,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nse&showcategories=OPTGRP,"Options (Equity, Equity Index)",Monday - Friday: 9:15-15:30
+3,India,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nse&showcategories=OPTGRP,"Options (Equity Index, Equity)",Monday - Friday: 9:15-15:30
 4,Japan,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ose.jpn&showcategories=OPTGRP,"Options (Equity, Equity Index)",Index FUT: 08:45-15:10 JSTNikkei VI FUT: 09:00-15:10 JSTIndex OPT: 09:00-15:10/16:30-5:30 JSTEquity OPT: 09:00-11:30/12:30-15:10 JSTSTK: 09:00-11:30/12:30-15:00 JST
 5,Singapore,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sgx&showcategories=OPTGRP,Options (Equity Index),Securities 9:00 - 17:00 SGT
 6,South Korea,https://www.interactivebrokers.com/en/index.php?f=2222&exch=kse&showcategories=OPTGRP,Options (Equity Index),Monday - Friday: 9:00-15:45
 0,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cfe&showcategories=FUTGRP,"Futures (Equity Index, Volatility Index)",9:30 - 16:15 ET
-1,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ecbot&showcategories=FUTGRP,"Futures (Equity Index, Fixed Income, Agriculture)",Monday - Sunday: 19:00-23:59
+1,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ecbot&showcategories=FUTGRP,"Futures (Agriculture, Equity Index, Fixed Income)",Monday - Sunday: 19:00-23:59
 2,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=globex&showcategories=FUTGRP,"Futures (Fixed Income, Agriculture, Currency, Energy, Equity Index)",Sunday - Friday: 1700 - 1600
 3,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nymex&showcategories=FUTGRP,"Futures (Energy, Metals, Soft Commodities)",Sunday 18:00 - Friday 17:15 ET
 4,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cmecrypto&showcategories=FUTGRP,Futures,Sunday - Thursday: 17:00-23:59
 5,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=icecrypto&showcategories=FUTGRP,Futures (Bakkt Bitcoin futures),Sunday - Thursday: 20:00-23:59
 6,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nybot&showcategories=FUTGRP,"Futures (Agriculture, Equity Index)",1:30 - 15:15 - Via ICE
 7,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=iceus&showcategories=FUTGRP,Futures,8:00 - 16:00 ET
-8,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nyseliffe&showcategories=FUTGRP,"Futures (Metals, Equity Index)",19:16-17:00 Sunday-Friday ET19:18-17 Sunday-Friday ET - Gold and Silver options only
+8,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nyseliffe&showcategories=FUTGRP,"Futures (Equity Index, Metals)",19:16-17:00 Sunday-Friday ET19:18-17 Sunday-Friday ET - Gold and Silver options only
 9,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=smfe&showcategories=FUTGRP,Futures,Monday - Friday: 7:00-16:00
-10,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cde&showcategories=FUTGRP,"Futures (Equity Index, Fixed Income)",Monday - Friday: 9:30-16:30
-11,Mexico,https://www.interactivebrokers.com/en/index.php?f=2222&exch=mexder&showcategories=FUTGRP,"Futures (Currency, Equity Index, Interest Rate, Single Stock)",Monday - Friday: 7:30-14:00
+10,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cde&showcategories=FUTGRP,"Futures (Equity Index, Fixed Income)",Monday - Friday: 20:00 ET (t-1) to 16:30 ET
+11,Mexico,https://www.interactivebrokers.com/en/index.php?f=2222&exch=mexder&showcategories=FUTGRP,"Futures (Single Stock, Currency, Equity Index, Interest Rate)",Monday - Friday: 7:30-14:00
 0,Belgium,https://www.interactivebrokers.com/en/index.php?f=2222&exch=belfox&showcategories=FUTGRP,Futures (Equity Index),Monday - Friday: 9:00-17:35
 1,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=matif&showcategories=FUTGRP,Futures (Agriculture),Monday - Friday: 10:45-18:30
 2,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=monep&showcategories=FUTGRP,Futures (Equity Index),Options: 9:00 - 17:30 CETFutures: 8:00 - 22:00 CET
@@ -143,12 +143,12 @@
 0,Australia,https://www.interactivebrokers.com/en/index.php?f=2222&exch=snfe&showcategories=FUTGRP,"Futures (Equity Index, Interest Rate)","Day and night trading sessions for access almost 24 hours a day:5.10pm to 7.00am and 9.50am to 4.30pm  (Sydney time, when US daylight saving time)5.10pm to 8.00am and 9.50am to 4.30pm (Sydney time, when US non-daylight saving time)"
 1,Hong Kong,https://www.interactivebrokers.com/en/index.php?f=2222&exch=hkfe&showcategories=FUTGRP,"Futures (Equity Index, Single Stock)",09:00- 16:00 HKT. Derivatives trading hours vary.
 2,India,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nse&showcategories=FUTGRP,"Futures (Currency, Equity Index, Single Stock)",Monday - Friday: 9:15-15:30
-3,Japan,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ose.jpn&showcategories=FUTGRP,"Futures (Equity Index, Fixed Income)",Index FUT: 08:45-15:10 JSTNikkei VI FUT: 09:00-15:10 JSTIndex OPT: 09:00-15:10/16:30-5:30 JSTEquity OPT: 09:00-11:30/12:30-15:10 JSTSTK: 09:00-11:30/12:30-15:00 JST
-4,Singapore,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sgx&showcategories=FUTGRP,"Futures (Equity Index, Metals, Rubber, Single Stock, Bond, Currency)",Securities 9:00 - 17:00 SGT
+3,Japan,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ose.jpn&showcategories=FUTGRP,"Futures (Fixed Income, Equity Index)",Index FUT: 08:45-15:10 JSTNikkei VI FUT: 09:00-15:10 JSTIndex OPT: 09:00-15:10/16:30-5:30 JSTEquity OPT: 09:00-11:30/12:30-15:10 JSTSTK: 09:00-11:30/12:30-15:00 JST
+4,Singapore,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sgx&showcategories=FUTGRP,"Futures (Bond, Currency, Equity Index, Metals, Rubber, Single Stock)",Securities 9:00 - 17:00 SGT
 5,South Korea,https://www.interactivebrokers.com/en/index.php?f=2222&exch=kse&showcategories=FUTGRP,"Futures (Equity Index, Single Stock)",Monday - Friday: 9:00-15:45
 0,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ecbot&showcategories=OPTGRP,"Futures Options (Agriculture, Equity Index, Fixed Income)",Monday - Sunday: 19:00-23:59
-1,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=globex&showcategories=OPTGRP,"Futures Options (Currency, Equity Index)",Sunday - Friday: 1700 - 1600
-2,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nymex&showcategories=OPTGRP,"Futures Options (Energy, Metals)",Sunday 18:00 - Friday 17:15 ET
+1,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=globex&showcategories=OPTGRP,"Futures Options (Equity Index, Currency)",Sunday - Friday: 1700 - 1600
+2,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nymex&showcategories=OPTGRP,"Futures Options (Metals, Energy)",Sunday 18:00 - Friday 17:15 ET
 3,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cmecrypto&showcategories=OPTGRP,Futures Options,Sunday - Thursday: 17:00-23:59
 4,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nybot&showcategories=OPTGRP,"Futures Options (Agriculture, Equity Index)",1:30 - 15:15 - Via ICE
 5,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nyseliffe&showcategories=OPTGRP,Futures Options (Metals),19:16-17:00 Sunday-Friday ET19:18-17 Sunday-Friday ET - Gold and Silver options only
@@ -202,10 +202,10 @@
 15,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nysenat&showcategories=WAR,Warrants,Monday - Friday: 9:30-16:00 EST
 16,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=pink&showcategories=WAR,Warrants,Monday - Friday: 9:30-16:00
 17,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=venture&showcategories=WAR,Warrants,Monday - Friday: 16:15-17:00
-0,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sbf&showcategories=WAR,"Warrants (Stock, Index)",Monday - Friday: 9:00-17:40
+0,France,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sbf&showcategories=WAR,"Warrants (Index, Stock)",Monday - Friday: 9:00-17:40
 1,Germany,https://www.interactivebrokers.com/en/index.php?f=2222&exch=fwb&showcategories=WAR,"Warrants (Index, Stock)",Monday - Friday: 8:00-20:00
 2,Germany,https://www.interactivebrokers.com/en/index.php?f=2222&exch=gettex&showcategories=WAR,Warrants,Monday - Friday: 9:00-20:00
-3,Germany,https://www.interactivebrokers.com/en/index.php?f=2222&exch=swb&showcategories=WAR,"Warrants (Index, Stock)",Monday - Friday: 8:00-22:00
+3,Germany,https://www.interactivebrokers.com/en/index.php?f=2222&exch=swb&showcategories=WAR,"Warrants (Stock, Index)",Monday - Friday: 8:00-22:00
 4,Italy,https://www.interactivebrokers.com/en/index.php?f=2222&exch=bvme&showcategories=WAR,"Warrants (Index, Stock)",Monday - Friday: 9:00-17:42
 5,Switzerland,https://www.interactivebrokers.com/en/index.php?f=2222&exch=ebs&showcategories=WAR,"Warrants (Index, Stock)",Monday - Friday: 9:00-17:32
 0,Australia,https://www.interactivebrokers.com/en/index.php?f=2222&exch=asx&showcategories=WAR,Warrants,10:00 - 16:00 Sydney Time
@@ -293,7 +293,7 @@
 10,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=pse&showcategories=IND,Indices,Monday - Friday: 6:30-13:00
 11,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nyseliffe&showcategories=IND,Indices,19:16-17:00 Sunday-Friday ET19:18-17 Sunday-Friday ET - Gold and Silver options only
 12,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=phlx&showcategories=IND,Indices,Monday - Friday: 9:30-16:00
-13,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cde&showcategories=IND,Indices,Monday - Friday: 9:30-16:30
+13,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=cde&showcategories=IND,Indices,Monday - Friday: 20:00 ET (t-1) to 16:30 ET
 14,Canada,https://www.interactivebrokers.com/en/index.php?f=2222&exch=tse&showcategories=IND,Indices (Stocks),9:30 - 16:00 ET
 0,Austria,https://www.interactivebrokers.com/en/index.php?f=2222&exch=vse&showcategories=IND,Indices,Monday - Friday: 9:00-17:45
 1,Belgium,https://www.interactivebrokers.com/en/index.php?f=2222&exch=belfox&showcategories=IND,Indices,Monday - Friday: 9:00-17:35
@@ -322,7 +322,7 @@
 5,Japan,https://www.interactivebrokers.com/en/index.php?f=2222&exch=tse.jpn&showcategories=IND,Indices,9:00 - 11:30 JST12:30 - 15:00 JST
 6,Singapore,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sgx&showcategories=IND,Indices,Securities 9:00 - 17:00 SGT
 7,South Korea,https://www.interactivebrokers.com/en/index.php?f=2222&exch=kse&showcategories=IND,Indices,Monday - Friday: 9:00-15:45
-0,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=bonddeskg&showcategories=BOND,"Fixed Income (Treasuries, Corporates)",8:00 - 17:00 ET
+0,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=bonddeskg&showcategories=BOND,"Fixed Income (Corporates, Treasuries)",8:00 - 17:00 ET
 1,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=bondlarge&showcategories=BOND,Fixed Income,8:00 - 17:00 ET
 2,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=valubond&showcategories=BOND,Fixed Income (Corporates),8:00 - 17:00 ET
 3,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=valubondm&showcategories=BOND,Fixed Income (Munis),8:00 - 17:00 ET
@@ -330,7 +330,7 @@
 5,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=municentm&showcategories=BOND,Fixed Income (Munis),8:00  - 17:00 ET
 6,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=nyse_bonds&showcategories=BOND,Fixed Income (Corporates),Monday - Friday: 800 - 1700
 7,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=tradewebm&showcategories=BOND,Fixed Income (Munis),8:00 - 17:00 ET
-8,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=tradewebg&showcategories=,Fixed Income (Treasuries)Bills,Monday - Friday: 730 - 1700
+8,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=tradewebg&showcategories=,BillsFixed Income (Treasuries),Monday - Friday: 730 - 1700
 9,United States,https://www.interactivebrokers.com/en/index.php?f=2222&exch=tradeweb&showcategories=BOND,Fixed Income,Monday - Friday: 8:00 - 17:00
 0,European Union,https://www.interactivebrokers.com/en/index.php?f=2222&exch=euronext&showcategories=BOND,Fixed Income (Corporate and Non-US Sovereign),Monday - Friday: 14:59-23:59
 0,Hong Kong,https://www.interactivebrokers.com/en/index.php?f=2222&exch=sehk&showcategories=BOND,Fixed Income (Non-US Sovereign),9:30 - 12:00 HKT13:00 - 16:00 HKT
@@ -698,94 +698,93 @@
 38,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Decalialu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
 39,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dfa,Mutual Funds,07:15 - 19:00 Mon - Fri CET
 40,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dimensionalie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-41,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dnbno,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-42,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dncalu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-43,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dominion,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-44,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dws,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-45,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dwslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-46,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Eagleie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-47,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Eastspringlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-48,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Edmondlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-49,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Efg,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-50,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Ersteat,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-51,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Eurofunds,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-52,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Federatedie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-53,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Finservese,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-54,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Firstsentierie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-55,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Fischlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-56,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Franklinadv,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-57,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Franklino,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-58,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Fundsmithgb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-59,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Gamie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-60,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Gamgb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-61,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Gamlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-62,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Guinnessie,Mutual Funds,9:00 - 20:00 CET
-63,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Htwoo,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-64,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Harborlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-65,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Harvestlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-66,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Henderson,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-67,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Heptagonie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-68,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Herefordlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-69,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Ifslie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-70,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Imgloballu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-71,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Invescog,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-72,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Janusg,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-73,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Jupiterie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-74,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Kotaklu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-75,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lazardfr,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-76,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lazardie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-77,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Leggie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-78,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lombardlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-79,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lordie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-80,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lyxorie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-81,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Mggb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-82,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Magallaneslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-83,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Merian,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-84,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Mfs,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-85,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Morganstanleylu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-86,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Muzinich,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-87,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Natixisfr,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-88,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Natixisie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-89,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Natixislu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-90,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Neubergereu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-91,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Nikkolu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-92,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Ninety,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-93,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Nninvlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-94,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Nomuraie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-95,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Nordealu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-96,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pareturnlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-97,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pharuslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-98,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Picteteu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-99,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pictetgb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-100,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pimcog,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-101,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pinebridgeie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-102,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Polenie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-103,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Principalie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-104,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Prosperitylu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-105,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Qaerolu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-106,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Robeco,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-107,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Rolinco,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-108,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Rorento,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-109,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Rwcpartnerslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-110,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Sandscapitalie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-111,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Sanlam,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-112,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Schroders,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-113,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Sialu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-114,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Singularlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-115,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Standardlifegb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-116,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Sustainablelu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-117,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Swisscantolu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-118,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Trowelu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-119,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Tcwlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-120,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Thornburgie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-121,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Ubslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-122,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Vanguardie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-123,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Vanguarduk,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-124,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Virtusie,Mutual Funds,9:30 - 15:59 ET
-125,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Vontobellu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-126,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Vontobelch,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-127,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Weisshornlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-128,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Wellingtonie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-129,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Wellingtonlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-130,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Welzialu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
-131,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Whiteoakie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+41,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dncalu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+42,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dominion,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+43,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dws,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+44,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Dwslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+45,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Eagleie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+46,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Eastspringlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+47,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Edmondlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+48,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Efg,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+49,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Ersteat,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+50,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Eurofunds,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+51,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Federatedie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+52,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Finservese,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+53,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Firstsentierie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+54,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Fischlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+55,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Franklinadv,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+56,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Franklino,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+57,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Fundsmithgb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+58,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Gamie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+59,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Gamgb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+60,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Gamlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+61,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Guinnessie,Mutual Funds,9:00 - 20:00 CET
+62,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Htwoo,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+63,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Harborlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+64,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Harvestlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+65,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Henderson,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+66,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Heptagonie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+67,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Herefordlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+68,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Ifslie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+69,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Imgloballu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+70,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Invescog,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+71,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Janusg,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+72,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Jupiterie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+73,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Kotaklu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+74,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lazardfr,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+75,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lazardie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+76,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Leggie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+77,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lombardlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+78,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lordie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+79,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Lyxorie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+80,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Mggb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+81,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Magallaneslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+82,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Merian,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+83,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Mfs,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+84,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Morganstanleylu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+85,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Muzinich,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+86,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Natixisfr,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+87,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Natixisie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+88,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Natixislu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+89,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Neubergereu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+90,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Nikkolu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+91,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Ninety,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+92,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Nninvlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+93,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Nomuraie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+94,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Nordealu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+95,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pareturnlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+96,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pharuslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+97,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Picteteu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+98,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pictetgb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+99,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pimcog,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+100,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Pinebridgeie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+101,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Polenie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+102,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Principalie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+103,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Prosperitylu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+104,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Qaerolu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+105,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Robeco,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+106,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Rolinco,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+107,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Rorento,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+108,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Rwcpartnerslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+109,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Sandscapitalie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+110,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Sanlam,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+111,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Schroders,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+112,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Sialu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+113,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Singularlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+114,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Standardlifegb,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+115,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Sustainablelu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+116,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Swisscantolu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+117,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Trowelu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+118,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Tcwlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+119,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Thornburgie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+120,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Ubslu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+121,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Vanguardie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+122,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Vanguarduk,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+123,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Virtusie,Mutual Funds,9:30 - 15:59 ET
+124,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Vontobellu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+125,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Vontobelch,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+126,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Weisshornlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+127,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Wellingtonie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+128,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Wellingtonlu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+129,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Welzialu,Mutual Funds,07:15 - 19:00 Mon - Fri CET
+130,,https://www.interactivebrokers.com/en/index.php?f=2262&exch=Whiteoakie,Mutual Funds,07:15 - 19:00 Mon - Fri CET
